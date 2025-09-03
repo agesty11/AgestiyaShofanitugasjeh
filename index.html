@@ -6,6 +6,68 @@
     <title>IMAGES Hijab - Katalog & Order Online</title>
     
     <style>
+        /* Hamburger Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            background: #fff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 8px 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .navbar .nav-toggle {
+            background: none;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            color: #D6809E;
+            margin-left: 12px;
+        }
+        .navbar-links {
+            display: none;
+            position: absolute;
+            top: 48px;
+            right: 16px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 12px 18px;
+        }
+        .navbar-links a {
+            display: block;
+            margin: 8px 0;
+            color: #D6809E;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .navbar-links a:hover {
+            text-decoration: underline;
+        }
+        .navbar.open .navbar-links {
+            display: block;
+        }
+        @media (min-width: 900px) {
+            .navbar .nav-toggle {
+                display: none;
+            }
+            .navbar-links {
+                display: flex !important;
+                position: static;
+                background: none;
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+            }
+            .navbar-links a {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
         /* Media & Figure Responsive */
         figure {
             display: flex;
@@ -220,9 +282,18 @@
     </style>
 </head>
 <body>
+    <nav class="navbar" id="navbar">
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="#tentang-kami">Tentang Kami</a>
+            <a href="#katalog">Katalog Produk</a>
+            <a href="#harga">Tabel Harga</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#form-order">Formulir Order</a>
+        </div>
+    </nav>
 
     <div class="container">
-
         <header style="text-align: center;">
             <figure>
                 <img src="assets/katalog web images/logo images bc.png" alt="Logo Brand IMAGES" style="max-width: 150px;">
@@ -241,13 +312,25 @@
             </article>
         </section>
 
-        <nav>
-            <a href="#tentang-kami">Tentang Kami</a> |
-            <a href="#katalog">Katalog Produk</a> |
-            <a href="#harga">Tabel Harga</a> |
-            <a href="#galeri">Galeri</a> |
-            <a href="#form-order">Formulir Order</a>
-        </nav>
+    <!-- Navbar now moved to top right hamburger menu -->
+    <script>
+    // Hamburger menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navbar = document.getElementById('navbar');
+    navToggle.addEventListener('click', function() {
+        navbar.classList.toggle('open');
+    });
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!navbar.contains(e.target)) {
+            navbar.classList.remove('open');
+        }
+    });
+    // Optional: close menu on scroll
+    window.addEventListener('scroll', function() {
+        navbar.classList.remove('open');
+    });
+    </script>
 
         <section id="katalog">
             <h2>Katalog Produk - Our Favorite Hijab</h2>
