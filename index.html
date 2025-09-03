@@ -6,6 +6,29 @@
     <title>IMAGES Hijab - Katalog & Order Online</title>
     
     <style>
+        /* Media & Figure Responsive */
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 16px 0;
+        }
+        figure img, figure video, figure audio {
+            margin-bottom: 8px;
+        }
+        video, audio {
+            width: 100%;
+            max-width: 480px;
+            display: block;
+            margin: 0 auto 12px auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            video, audio {
+                max-width: 100%;
+            }
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #F8E8EE; /* Warna soft pink */
@@ -133,6 +156,67 @@
             color: #666;
             margin-top: 5px;
         }
+            /* Responsive Styles */
+            @media (max-width: 768px) {
+                .container {
+                    padding: 8px;
+                }
+                header, section, footer {
+                    padding: 10px;
+                }
+                h1 {
+                    font-size: 1.5em;
+                }
+                h2 {
+                    font-size: 1.2em;
+                }
+                h3 {
+                    font-size: 1em;
+                }
+                nav a {
+                    padding: 0 5px;
+                    font-size: 0.95em;
+                }
+                .product-item img {
+                    width: 100%;
+                    max-width: 220px;
+                }
+                .gallery-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                    gap: 6px;
+                }
+                .gallery-grid img {
+                    height: 90px;
+                }
+                table, th, td {
+                    font-size: 0.95em;
+                    padding: 7px;
+                }
+            }
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 1.1em;
+                }
+                h2 {
+                    font-size: 1em;
+                }
+                h3 {
+                    font-size: 0.9em;
+                }
+                .product-item img {
+                    max-width: 140px;
+                }
+                .gallery-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+                .gallery-grid img {
+                    height: 60px;
+                }
+                table, th, td {
+                    font-size: 0.85em;
+                    padding: 4px;
+                }
+            }
     </style>
 </head>
 <body>
@@ -319,7 +403,7 @@
                     <img src="assets/hijab lainnya/var-bergotali2.jpeg" alt="Bergo tali">
                     <figcaption>Bergo Tali Malaysia</figcaption>
                 </figure>
-                </div>
+            </div>
         </section>
 
         <section id="form-order">
@@ -371,16 +455,24 @@
             
             <article>
                 <h3>Video Promosi</h3>
-                <video width="50%" height="auto" controls poster="assets/Video Promosi Images.mp4">
-                    <source src="assets/Video Promosi Images.mp4" type="video/mp4">
-                </video>
+                <figure>
+                    <video controls poster="assets/Video Promosi Images.mp4">
+                        <source src="assets/Video Promosi Images.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung video.
+                    </video>
+                    <figcaption>Video Promosi IMAGES</figcaption>
+                </figure>
             </article>
 
             <article>
                 <h3>Jingle "Shine with Images"</h3>
-                <audio controls>
-                    <source src="assets/Shine with Images.mp3" type="audio/mpeg">
-                </audio>
+                <figure>
+                    <audio controls>
+                        <source src="assets/Shine with Images.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung audio.
+                    </audio>
+                    <figcaption>Jingle IMAGES</figcaption>
+                </figure>
             </article>
         </section>
         
