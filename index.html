@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGES Hijab - Katalog & Order Online</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F8E8EE; /* Warna soft pink */
+            color: #4B4B4B;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        header, section, footer {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #D6809E; /* Warna soft pink yang lebih gelap */
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #F0C4D6;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #D6809E;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #D6809E;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #F0C4D6;
+        }
+        form {
+            background-color: #F8E8EE;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], textarea, select {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #D6809E;
+            border-radius: 4px;
+        }
+        .button-group {
+            margin-top: 15px;
+            text-align: right;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .button-group button[type="submit"] {
+            background-color: #D6809E;
+            color: white;
+        }
+        .button-group button[type="reset"] {
+            background-color: #E9E9E9;
+            color: #4B4B4B;
+        }
+        .product-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-item img {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .gallery-grid figure {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .gallery-grid figcaption {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header style="text-align: center;">
+            <figure>
+                <img src="assets/katalog web images/logo images bc.png" alt="Logo Brand IMAGES" style="max-width: 150px;">
+            </figure>
+            <h1 style="color: #D6809E;">"Shine Your Beauty with Your Images!"</h1>
+            <p>Pilihan Terbaik untuk Gaya Hijab Sehari-hari</p>
+            <hr>
+        </header>
+
+        <section id="tentang-kami">
+            <h2>Tentang Kami</h2>
+            <article>
+                <p style="text-align: justify;">Welcome Pretty Gurls! <strong>IMAGES</strong> adalah brand hijab ternama yang berdedikasi untuk menyediakan koleksi hijab berkualitas tinggi dengan desain modern dan elegan. Kami percaya bahwa setiap wanita berhak tampil percaya diri dan stylish tanpa meninggalkan nilai-nilai kesederhanaan. Dengan fokus pada kenyamanan, kualitas bahan, dan keragaman gaya, IMAGES hadir sebagai solusi fashion hijab untuk setiap momen, baik formal maupun kasual.</p>
+                <p style="text-align: justify;">Setiap produk kami, mulai dari Bella Square yang klasik hingga Pashmina Rayya Silk yang mewah, dibuat dengan teliti dan penuh perhatian. Kami menggunakan bahan-bahan terbaik untuk memastikan hijab terasa ringan, sejuk, dan mudah dibentuk. IMAGES berkomitmen untuk terus berinovasi, menghadirkan produk-produk yang tidak hanya mengikuti tren, tetapi juga menciptakan tren baru di dunia fashion hijab.</p>
+                <p style="text-align: justify;">Jadilah bagian dari perjalanan kami dan temukan gaya hijab impian mu bersama IMAGES ya gurls!</p>
+            </article>
+        </section>
+
+        <nav>
+            <a href="#tentang-kami">Tentang Kami</a> |
+            <a href="#katalog">Katalog Produk</a> |
+            <a href="#harga">Tabel Harga</a> |
+            <a href="#galeri">Galeri</a> |
+            <a href="#form-order">Formulir Order</a>
+        </nav>
+
+        <section id="katalog">
+            <h2>Katalog Produk - Our Favorite Hijab</h2>
+            <hr>
+            <p>Temukan koleksi hijab terbaik dari IMAGES, tersedia dalam berbagai jenis dan varian warna yang menawan.</p>
+
+            <article class="product-item">
+                <h3>Bella Square</h3>
+                <figure>
+                    <img src="assets/katalog web images/bella-square.jpeg" alt="Foto produk Bella Square">
+                    <img src="assets/katalog web images/varian-bella.jpeg" alt="Foto produk Bella Square">
+                    <figcaption>Varian Bella Square: Tersedia dalam 20+ warna pastel dan bold.</figcaption>
+                </figure>
+                <p>Bella Square adalah hijab segi empat klasik yang paling banyak dicari. Terbuat dari bahan katun premium yang lembut, tidak licin, dan mudah dibentuk. Sangat cocok untuk gaya sehari-hari yang simpel namun tetap elegan.</p>
+            </article>
+
+            <article class="product-item">
+                <h3>Paris Premium</h3>
+                <figure>
+                    <img src="assets/katalog web images/paris-premium.jpeg" alt="Foto produk Paris Premium">
+                    <img src="assets/katalog web images/varian-parispremium.jpeg" alt="Foto produk Paris Premium">
+                    <figcaption>Varian Paris Premium: Hadir dengan finishing laser cut yang rapi.</figcaption>
+                </figure>
+                <p>Dikenal dengan bahan voal premium yang sangat adem dan ringan saat dipakai. Hijab Paris Premium memberikan kesan mewah dan jatuh dengan sempurna. Pilihan tepat untuk acara formal atau semi-formal.</p>
+            </article>
+
+            <article class="product-item">
+                <h3>Paris Japan</h3>
+                <figure>
+                    <img src="assets/katalog web images/paris-japan.jpeg" alt="Foto produk Paris Japan">
+                    <img src="assets/katalog web images/varian-parisjapan.jpeg" alt="Foto produk Paris Japan">
+                    <figcaption>Varian Paris Japan: Warna-warna solid yang elegan.</figcaption>
+                </figure>
+                <p>Menggunakan bahan yang unik, Paris Japan menawarkan tekstur yang berbeda dan tidak pasaran. Mudah diatur dan tidak mudah kusut, menjadikannya favorit para hijabers yang aktif.</p>
+            </article>
+
+            <article class="product-item">
+                <h3>Pashmina Ceruty</h3>
+                <figure>
+                    <img src="assets/katalog web images/pashmina-ceruty.jpeg" alt="Foto produk Pashmina Ceruty">
+                    <img src="assets/katalog web images/var-pashceruty.jpeg" alt="Foto produk Pashmina Ceruty">
+                    <img src="assets/katalog web images/var-pashceruty2.jpeg" alt="Foto produk Pashmina Ceruty">
+                    <img src="assets/katalog web images/var-pashceruty3.jpeg" alt="Foto produk Pashmina Ceruty">
+                    <img src="assets/katalog web images/var-pashceruty4.jpeg" alt="Foto produk Pashmina Ceruty">
+                    <figcaption>Varian Pashmina Ceruty: Tersedia dalam berbagai warna yang soft dan elegan.</figcaption>
+                </figure>
+                <p>Pashmina dengan bahan ceruty babydoll yang terkenal ringan dan memiliki efek "flowy". Memberikan kesan anggun dan mudah dibentuk dengan berbagai gaya. Cocok untuk tampilan kasual dan semi-formal.</p>
+            </article>
+
+            <article class="product-item">
+                <h3>Pashmina Rayya Silk</h3>
+                <figure>
+                    <img src="assets/katalog web images/pashmina-rayyasilk.jpeg" alt="Foto produk Pashmina Rayya Silk">
+                    <img src="assets/katalog web images/varian-pashrayyasilk.jpeg" alt="Foto produk Pashmina Rayya Silk">
+                    <figcaption>Varian Pashmina Rayya Silk: Kilau mewah dan bahan jatuh.</figcaption>
+                </figure>
+                <p>Pashmina berbahan satin silk dengan tekstur halus dan kilau mewah. Memberikan tampilan yang glamor dan eksklusif. Sempurna untuk acara pesta atau perayaan penting.</p>
+            </article>
+
+            <article class="product-item">
+                <h3>Pashmina Rayyon</h3>
+                <figure>
+                    <img src="assets/katalog web images/pashmina-rayyon.jpeg" alt="Foto produk Pashmina Rayyon">
+                    <img src="assets/katalog web images/varian-pashrayyon.jpeg" alt="Foto produk Pashmina Rayyon">
+                    <figcaption>Varian Pashmina Rayyon: Bahan lembut dan mudah menyerap keringat.</figcaption>
+                </figure>
+                <p>Terbuat dari bahan rayon yang sangat lembut dan nyaman, Pashmina Rayyon adalah pilihan terbaik untuk cuaca panas. Bahan yang jatuh dan tidak licin membuatnya mudah dibentuk.</p>
+            </article>
+        </section>
+
+        <section id="harga">
+            <h2>Tabel Harga Produk</h2>
+            <table>
+                <caption>Daftar Harga Terbaru Hijab Fashion</caption>
+                <thead>
+                    <tr>
+                        <th>Jenis Produk</th>
+                        <th>Harga Satuan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bella Square</td>
+                        <td>Rp 25.000</td>
+                    </tr>
+                    <tr>
+                        <td>Paris Premium</td>
+                        <td>Rp 30.000</td>
+                    </tr>
+                    <tr>
+                        <td>Paris Japan</td>
+                        <td>Rp 35.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pashmina Ceruty</td>
+                        <td>Rp 32.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pashmina Rayya Silk</td>
+                        <td>Rp 45.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pashmina Rayyon</td>
+                        <td>Rp 40.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pashmina Jasmine</td>
+                        <td>Rp 33.000</td>
+                    </tr>
+                    <tr>
+                        <td>Plain Square</td>
+                        <td>Rp 24.000</td>
+                    </tr>
+                    <tr>
+                        <td>Hijab Sport</td>
+                        <td>Rp 19.000</td>
+                    </tr>
+                    <tr>
+                        <td>Bergo Tali Malaysia</td>
+                        <td>Rp 22.000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Harga dapat berubah sewaktu-waktu.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="galeri">
+            <h2>Galeri Produk Hijab Lainnya & Varian Warna</h2>
+            <p>Lihat koleksi lengkap produk dan varian warna kami:</p>
+
+            <div class="gallery-grid">
+                <figure>
+                    <img src="assets/hijab lainnya/pashmina-jasmine.jpeg" alt="Pashmina pashmina-jasmine">
+                    <img src="assets/hijab lainnya/var-pashjasm.jpeg" alt="Pashmina pashmina-jasmine">
+                    <figcaption>Pashmina Jasmine</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/hijab lainnya/plain-sq.jpeg" alt="Plain Square">
+                    <img src="assets/hijab lainnya/var-plainsq.jpeg" alt="Plain Square">
+                    <figcaption>Plain Square</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/hijab lainnya/hijab-sport.jpeg" alt="Hijab Sport">
+                    <img src="assets/hijab lainnya/var-hijabsport.jpeg" alt="Hijab Sport">
+                    <figcaption>Hijab Sport</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/hijab lainnya/bergo-tali.jpeg" alt="Bergo tali">
+                    <img src="assets/hijab lainnya/var-bergotali2.jpeg" alt="Bergo tali">
+                    <figcaption>Bergo Tali Malaysia</figcaption>
+                </figure>
+                </div>
+        </section>
+
+        <section id="form-order">
+            <h2>Formulir Pemesanan Online</h2>
+            <form action="#" method="POST">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="produk">Produk yang Dipesan:</label>
+                <select id="produk" name="produk" required>
+                    <option value="">-- Pilih Produk --</option>
+                    <option value="bella-square">Bella Square</option>
+                    <option value="paris-premium">Paris Premium</option>
+                    <option value="paris-japan">Paris Japan</option>
+                    <option value="pashmina-ceruty">Pashmina Ceruty</option>
+                    <option value="pashmina-rayya-silk">Pashmina Rayya Silk</option>
+                    <option value="pashmina-rayyon">Pashmina Rayyon</option>
+                </select>
+
+                <label for="warna">Warna yang Dipesan:</label>
+                <textarea id="warna" name="warna" rows="1" required></textarea>   
+
+                <label for="jumlah">Jumlah yang Dipesan:</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" required>
+
+                <label for="alamat">Alamat Lengkap:</label>
+                <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+                <label for="pengiriman">Jenis Pengiriman:</label>
+                <select id="pengiriman" name="pengiriman" required>
+                    <option value="">-- Pilih Jenis Pengiriman --</option>
+                    <option value="reguler">Reguler</option>
+                    <option value="express">Express</option>
+                </select>
+
+                <div class="button-group">
+                    <button type="submit">Order Sekarang</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="promosi">
+            <h2>Media Promosi</h2>
+            <hr>
+            
+            <article>
+                <h3>Video Promosi</h3>
+                <video width="50%" height="auto" controls poster="assets/Video Promosi Images.mp4">
+                    <source src="assets/Video Promosi Images.mp4" type="video/mp4">
+                </video>
+            </article>
+
+            <article>
+                <h3>Jingle "Shine with Images"</h3>
+                <audio controls>
+                    <source src="assets/Shine with Images.mp3" type="audio/mpeg">
+                </audio>
+            </article>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2025 IMAGES Hijab. Semua hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>
